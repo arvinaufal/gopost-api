@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "24d0dcaf-3763-4b23-bfc4-42b4c40d9fb4",
+		"name": "GoPost",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24509849"
+	},
+	"item": [
+		{
+			"name": "Get Article List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/article/list/10/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"article",
+						"list",
+						"10",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Article",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Antara Dilan, Milea, dan Arti Sebuah Persahabatan\",\r\n    \"content\": \"Kepada Dilan, Milea bercerita arti sebuah persahabatan yang mungkin nampak semu bagi mereka. Namun di balik tawa dan canda, ada rasa yang tak pernah bisa terucap. Milea selalu berusaha memahami Dilan, meski terkadang ia merasa hatinya goyah. Dalam perjalanan mereka, ada begitu banyak kenangan yang terukir. Ada malam panjang dengan obrolan sederhana, ada hujan yang menemani langkah mereka, ada juga momen di mana mereka hanya bisa saling menatap dalam diam. Namun, di antara semua itu, satu hal yang pasti: mereka pernah saling ada.\",\r\n    \"category\": \"Romance\",\r\n    \"status\": \"draft\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/article",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"article"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Article By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/article/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"article",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Article",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Artikel tentang kita (aku dan kamu)\",\r\n    \"content\": \"Mereka pernah berjanji untuk bertemu kembali di tempat yang sama, di bawah pohon besar tempat mereka biasa menghabiskan waktu bersama. Namun, waktu dan keadaan berkata lain. Hari itu datang, tapi hanya satu di antara mereka yang hadir. Yang lainnya hanya meninggalkan jejak kenangan, tersimpan dalam ingatan yang tak akan pernah pudar. Janji yang dulu terasa begitu nyata kini hanya tinggal kata-kata yang menggantung di udara. Hidup membawa mereka ke arah yang berbeda, dan akhirnya mereka hanya bisa mengenang apa yang pernah ada.\",\r\n    \"category\": \"Self Improvement\",\r\n    \"status\": \"publish\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/article/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"article",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Article",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/article/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"article",
+						"9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
